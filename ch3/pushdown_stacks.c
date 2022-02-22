@@ -35,6 +35,6 @@ int stackempty() {
     return head->next == z;
 }
 
-int main() {
-    return 0;
-}
+// int main() {
+//     return 0;
+// }
