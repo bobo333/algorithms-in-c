@@ -14,6 +14,7 @@ void initqueue() {
     head = (struct node *) malloc(sizeof(*head));
     tail = (struct node *) malloc(sizeof(*tail));
     head->key = 0;
+    tail->key = 0;
     tail->next = tail;
     head->next = tail;
 }
@@ -23,6 +24,7 @@ void push(int x) {
     new->key = x;
     new->next = new;
     tail->next = new;
+    tail = new;
 }
 
 int pop() {
